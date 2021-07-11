@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-Welcome! I am a fresh graduate from the National University of Singapore, majoring in Life Sciences. Coming from a science background, I have accumulated extensive undergraduate research experiences. I will be joining Dr. Karen Crasta's laboratory at Centre for Life Sciences (CeLS) as a research asisstant. 
+Welcome! I am a fresh graduate from the [National University of Singapore](https://www.nus.edu.sg/), majoring in Life Sciences. Coming from a science background, I have accumulated extensive undergraduate research experiences. I will be joining [Dr. Karen Crasta's laboratory](https://www.crastalab.com/) at [Centre for Life Sciences (CeLS)](https://www.lsi.nus.edu.sg/corp/research-institutes-cels/) as a research asisstant. 
 
 My most recent research explored potential epigenetic causes and mechanisms involving the pathogenesis of glioblastoma. We utilized a multi-disciplinary approach involving -omics based screening, biochemical assays, and phenotypic characterization to unravel and elucidate key epigenetic mechanisms that could potentially be targeted for glioblastoma treatment. 
 
