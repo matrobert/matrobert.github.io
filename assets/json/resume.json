@@ -19,7 +19,7 @@
     {
       "name": "NUHS Centre for Healthy Longevity, Singapore",
       "position": "Research Assistant",
-      "url": "https://example.com",
+      "url": "https://coe.nuhs.edu.sg/centre-for-healthy-longevity",
       "startDate": "2021-08-01",
       "endDate": "current",
       "summary": "Genomic Instability and Stress Response Lab, PI: Research Asst. Prof. Karen Crasta",
@@ -28,7 +28,7 @@
     {
       "name": "Department of Physiology, National University of Singapore, Singapore",
       "position": "Undergraduate Researcher",
-      "url": "",
+      "url": "https://medicine.nus.edu.sg/phys/",
       "startDate": "2020-06-01",
       "endDate": "2021-06-01",
       "summary": "Cancer Stem Cell Lab, PI: Asst. Prof. Derrick Ong",
@@ -38,7 +38,7 @@
     {
       "name": "Department of Biological Sciences, National University of Singapore, Singapore",
       "position": "Undergraduate Researcher",
-      "url": "",
+      "url": "https://www.dbs.nus.edu.sg/",
       "startDate": "2019-06-01",
       "endDate": "2020-04-01",
       "summary": "Stomatal Development Lab, PI: Assoc. Prof. Lau On Sun",
@@ -51,17 +51,15 @@
       "organization": "Healthy Longevity Webinar Series",
       "location": "Singapore",
       "position": "Coordinator & Volunteer",
-      "url": "https://example.com",
       "startDate": "2022-12-01",
       "endDate": "2024-06-01",
       "summary": "The webinar series aims to raise awareness of healthy ageing and invite leading scientists, entrepreneurs, and policymakers to share perspectives on ageing research.",
-      "highlights": ["As volunteer, provided concise 5-minute presentations catered to the public on recent findings in the field of geroscience as well as on ongoing research projects in CHL.", "As coordinator, I am responsible for the recruitment, preparation, scheduling, and general coordination of the internal presenters and moderators to ensure smooth production workflow and high-quality weekly episodes.", "The webinar reaches an international audience of scientists and laymen with a participation of 350 audiences on average for each episode."]
+      "highlights": ["As volunteer, I delivered 5-minute lectures on recent findings in the field of geroscience and on the ongoing research projects at CHL.", "As coordinator, I am responsible for the recruitment, preparation, scheduling, and general coordination of internal presenters and moderators to ensure smooth production workflow and high-quality weekly episodes.", "The webinar reaches an international audience of scientists and laymen with a participation of 350 audiences on average for each episode."]
     },
     {
       "organization": "Longevity Science Singapore Conference",
       "location": "Singapore",
       "position": "Volunteer",
-      "url": "",
       "startDate": "2022-03-01",
       "endDate": "2022-03-05",
       "summary": "The Longevity Science Singapore Conference is a full-day medical scientific conference catered for healthcare and academic professionals.",
@@ -72,7 +70,7 @@
     {
       "institution": "National University of Singapore",
       "location": "Singapore",
-      "url": "https://www.uzh.ch/",
+      "url": "https://www.dbs.nus.edu.sg/lifesciences/",
       "area": "B.Sc (Hons.) in Life Sciences",
       "studyType": "Bachelor of Science",
       "startDate": "2017",
@@ -87,10 +85,10 @@
       "date": "2024-11",
       "awarder": "Healthy Longevity Translational Research Programme",
       "url": "https://nusyoungscientists.com/",
-      "summary": " HLTRP Young Investigator Grant aims to support and cultivate innovative spirit of junior scientists, the grant awards selected research proposals with emphasis on blue-sky research and novelty in the healthy longevity area ."
+      "summary": " HLTRP Young Investigator Grant aims to support and cultivate innovation amongst junior scientists. The grant awards selected research proposals with emphasis on blue-sky research and novelty in the healthy longevity area ."
     },
     {
-      "title": "Recipient of the Student Life Awards 2019",
+      "title": "Recipient of the Student Life Awards",
       "date": "2019-10",
       "awarder": "Office of Student Affairs, National University of Singapore",
       "url": "https://osa.nus.edu.sg/services-support/student-life-hacks-resources/digital-badges/student-life-awards/",
