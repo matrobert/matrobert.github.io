@@ -35,16 +35,14 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_consolation/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+            },},{id: "news-our-review-therapy-induced-senescence-through-the-redox-lens-is-now-published-in-redox-biology",
+          title: 'Our review ‘Therapy-induced senescence through the redox lens’ is now published in Redox...',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+          section: "News",},{id: "news-pre-print-alert-first-paper-on-tumor-derived-extracellular-vesicles-is-now-out-on-pre-print",
+          title: 'Pre-print alert! First paper on tumor-derived extracellular vesicles is now out on pre-print....',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          section: "News",},{id: "news-website-updated-and-is-now-live",
+          title: 'Website updated and is now live.',
           description: "",
           section: "News",},{
       id: 'light-theme',
