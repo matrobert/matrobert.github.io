@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mtrob.io/sitemap.xml
+Sitemap: http://www.mtrob.io/sitemap.xml
