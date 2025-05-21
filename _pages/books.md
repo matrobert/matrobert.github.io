@@ -11,4 +11,4 @@ collection: books
 >
 > -- Fyodor Dostoevsky, White Nights (1848)
 
-## Books to read and re-read
+##### Timeless ideas and books that I've read:

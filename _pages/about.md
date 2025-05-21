@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research at <a href='https://coe.nuhs.edu.sg/centre-for-healthy-longevity'> NUHS Centre for Healthy Longevity </a>, Singapore
+subtitle: <a href='https://coe.nuhs.edu.sg/centre-for-healthy-longevity'> NUHS Centre for Healthy Longevity</a>, Singapore
 
 profile:
   align: right
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Hello! I am currently working at the [NUHS Centre for Healthy Longevity](https://coe.nuhs.edu.sg/centre-for-healthy-longevity) as a research assistant. My research is focused on dissecting the biology and the consequences behind **chemotherapy-induced senescence**, a key driver of cancer recurrence and chemotherapy off-target toxicity. By leveraging on -omics technology, we hope to reveal previously under-appreciated mechanisms that drive therapy-induced senescence and its phenotype, and look for novel intervention opportunity.
+Hello! I am currently working at the [NUHS Centre for Healthy Longevity](https://coe.nuhs.edu.sg/centre-for-healthy-longevity) as a research assistant. My research is focused on dissecting the biology and consequences behind **chemotherapy-induced senescence** to tackle cancer recurrence and chemotherapy off-target toxicity. By leveraging on '-omics' technology, we hope to reveal previously under-appreciated mechanisms that drive therapy-induced senescence and its phenotype, and look for novel intervention opportunity.
 
 I hold a B.Sc in Life Sciences from the [National University of Singapore](https://nus.edu.sg). For more details on my background, please navigate to the CV section.
 
