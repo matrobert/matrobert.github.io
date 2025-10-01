@@ -16,11 +16,11 @@ export function CVDownload({ lastUpdated, fileSize, onDownload }: CVDownloadProp
           Curriculum Vitae
         </h2>
 
-        <Card className="p-8">
+        <Card className="p-8 bg-gradient-to-br from-card to-primary/5">
           <div className="flex flex-col md:flex-row items-center gap-6">
             <div className="flex-shrink-0">
-              <div className="w-20 h-20 rounded-md bg-primary/10 flex items-center justify-center">
-                <FileText className="w-10 h-10 text-primary" />
+              <div className="w-20 h-20 rounded-md bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                <FileText className="w-10 h-10 text-white" />
               </div>
             </div>
 
@@ -39,6 +39,7 @@ export function CVDownload({ lastUpdated, fileSize, onDownload }: CVDownloadProp
             <div className="flex-shrink-0">
               <Button
                 size="lg"
+                className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
                 onClick={onDownload}
                 data-testid="button-download-cv-main"
               >

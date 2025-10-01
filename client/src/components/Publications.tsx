@@ -89,7 +89,7 @@ export function Publications({ publications }: PublicationsProps) {
                             {pub.venue}
                           </p>
                           {pub.citations !== null && pub.citations > 0 && (
-                            <Badge variant="secondary" className="text-xs">
+                            <Badge className="text-xs bg-gradient-to-r from-accent to-secondary text-white">
                               {pub.citations} citations
                             </Badge>
                           )}

@@ -61,7 +61,11 @@ export function Writing({ articles, substackUrl }: WritingProps) {
         </div>
 
         <div className="text-center">
-          <Button asChild data-testid="link-substack">
+          <Button 
+            className="bg-gradient-to-r from-secondary to-accent hover:from-secondary/90 hover:to-accent/90"
+            asChild 
+            data-testid="link-substack"
+          >
             <a href={substackUrl} target="_blank" rel="noopener noreferrer">
               View All Articles
               <ExternalLink className="ml-2 h-4 w-4" />

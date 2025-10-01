@@ -31,7 +31,8 @@ export function Hero({
     .toUpperCase();
 
   return (
-    <section className="py-16 md:py-24">
+    <section className="py-16 md:py-24 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 -z-10" />
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <div className="flex flex-col items-center text-center">
           <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
@@ -73,6 +74,7 @@ export function Hero({
           <div className="flex flex-wrap gap-4 justify-center">
             <Button
               size="lg"
+              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
               onClick={onViewPublications}
               data-testid="button-view-publications"
             >

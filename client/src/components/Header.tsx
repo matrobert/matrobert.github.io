@@ -27,28 +27,28 @@ export function Header() {
           <nav className="hidden md:flex gap-6">
             <a
               href="#about"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-sm font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:to-secondary transition-all"
               data-testid="link-nav-about"
             >
               About
             </a>
             <a
               href="#publications"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-sm font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:to-secondary transition-all"
               data-testid="link-nav-publications"
             >
               Publications
             </a>
             <a
               href="#writing"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-sm font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:to-secondary transition-all"
               data-testid="link-nav-writing"
             >
               Writing
             </a>
             <a
               href="#cv"
-              className="text-sm font-medium hover:text-primary transition-colors"
+              className="text-sm font-medium hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-primary hover:to-secondary transition-all"
               data-testid="link-nav-cv"
             >
               CV
