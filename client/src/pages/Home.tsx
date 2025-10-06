@@ -33,7 +33,7 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col items-center text-center mb-16">
           <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
             <AvatarImage src="" alt="Profile" />
@@ -55,7 +55,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="grid gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           <Card className="hover-elevate" data-testid="card-publications">
             <CardHeader>
               <div className="flex items-center gap-3">
