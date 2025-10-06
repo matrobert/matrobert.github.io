@@ -36,7 +36,7 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col items-center text-center mb-16">
           <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
-            <AvatarImage src="/prof_pic.jpg" alt="Profile" />
+            <AvatarImage src="/prof_pic.JPG" alt="Profile" />
             <AvatarFallback className="text-2xl md:text-3xl font-semibold">
               JS
             </AvatarFallback>
