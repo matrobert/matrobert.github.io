@@ -70,7 +70,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  View my research on Google Scholar
+                  View my publications on Google Scholar
                 </p>
                 <Button
                   variant="default"
@@ -140,16 +140,21 @@ export default function Home() {
               </div>
             </CardHeader>
             <CardContent>
-              <Button
-                variant="default"
-                size="lg"
-                className="w-full"
-                onClick={handleDownloadCV}
-                data-testid="button-download-cv"
-              >
-                <Download className="mr-2 h-5 w-5" />
-                Download CV
-              </Button>
+              <div className="space-y-3">
+                <p className="text-muted-foreground text-sm">
+                  View my CV here
+                </p>
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="w-full"
+                  onClick={handleDownloadCV}
+                  data-testid="button-download-cv"
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download CV
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>
