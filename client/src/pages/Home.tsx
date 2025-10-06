@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, PenTool, Download, Moon, Sun } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
+import profileImage from "@assets/stock_images/professional_headsho_5e68f483.jpg";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -36,22 +37,22 @@ export default function Home() {
       <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
         <div className="flex flex-col items-center text-center mb-16">
           <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
-            <AvatarImage src="" alt="Profile" />
+            <AvatarImage src={profileImage} alt="Profile" />
             <AvatarFallback className="text-2xl md:text-3xl font-semibold">
               JS
             </AvatarFallback>
           </Avatar>
 
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3" data-testid="text-name">
-            Dr. Jane Smith
+            Matius Robert
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-2" data-testid="text-position">
-            PhD Student in Computer Science
+            Metabolic Research | PhD Candidate
           </p>
 
           <p className="text-base md:text-lg text-muted-foreground" data-testid="text-institution">
-            University of Technology
+            Duke-NUS Medical School, Singapore
           </p>
         </div>
 
@@ -106,7 +107,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  Coming soon: In-depth articles on biotech and academia
+                  Coming soon: long-form articles on biotech, academia, and life
                 </p>
                 <Button
                   variant="secondary"
@@ -142,7 +143,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  View my CV here
+                  Download and view my curriculum vitae here
                 </p>
                 <Button
                   variant="default"
@@ -160,7 +161,7 @@ export default function Home() {
         </div>
 
         <footer className="mt-16 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} Dr. Jane Smith. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Matius Robert. All rights reserved.</p>
         </footer>
       </div>
     </div>
