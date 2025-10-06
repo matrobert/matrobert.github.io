@@ -69,22 +69,27 @@ export default function Home() {
               </div>
             </CardHeader>
             <CardContent>
-              <Button
-                variant="default"
-                size="lg"
-                className="w-full"
-                asChild
-                data-testid="button-google-scholar"
-              >
-                <a
-                  href="https://scholar.google.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <div className="space-y-3">
+                <p className="text-muted-foreground text-sm">
+                  View my research on Google Scholar
+                </p>
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="w-full"
+                  asChild
+                  data-testid="button-google-scholar"
                 >
-                  <BookOpen className="mr-2 h-5 w-5" />
-                  Visit Google Scholar
-                </a>
-              </Button>
+                  <a
+                    href="https://scholar.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <BookOpen className="mr-2 h-5 w-5" />
+                    Visit Google Scholar
+                  </a>
+                </Button>
+              </div>
             </CardContent>
           </Card>
 
@@ -103,7 +108,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  Coming soon: long-form essays on biotech, academia, and life.
+                  Coming soon: In-depth articles on biotech and academia
                 </p>
                 <Button
                   variant="secondary"
