@@ -135,7 +135,7 @@ export default function Home() {
                   <Download className="h-6 w-6 text-accent" />
                 </div>
                 <div className="text-left">
-                  <CardTitle className="text-2xl">Curriculum Vitae</CardTitle>
+                  <CardTitle className="text-2xl">CV</CardTitle>
                 </div>
               </div>
             </CardHeader>
