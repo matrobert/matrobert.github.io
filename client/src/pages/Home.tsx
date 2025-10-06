@@ -64,7 +64,6 @@ export default function Home() {
                 </div>
                 <div className="text-left">
                   <CardTitle className="text-2xl">Publications</CardTitle>
-                  <CardDescription>View my research on Google Scholar</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -101,7 +100,6 @@ export default function Home() {
                 </div>
                 <div className="text-left">
                   <CardTitle className="text-2xl">Writing</CardTitle>
-                  <CardDescription>Long-form essays and thoughts</CardDescription>
                 </div>
               </div>
             </CardHeader>
@@ -138,7 +136,6 @@ export default function Home() {
                 </div>
                 <div className="text-left">
                   <CardTitle className="text-2xl">Curriculum Vitae</CardTitle>
-                  <CardDescription>Download my CV as a PDF</CardDescription>
                 </div>
               </div>
             </CardHeader>
