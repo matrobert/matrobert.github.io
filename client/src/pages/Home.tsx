@@ -103,7 +103,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  Coming soon: In-depth articles on AI research, academia, and technology.
+                  Coming soon: long-form essays on biotech, academia, and life.
                 </p>
                 <Button
                   variant="secondary"
