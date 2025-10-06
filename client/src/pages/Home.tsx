@@ -1,8 +1,9 @@
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, PenTool, Download, Moon, Sun } from "lucide-react";
+import { BookOpen, PenTool, Download, Moon, Sun, Github } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
+import { SiX, SiOrcid } from "react-icons/si";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -53,6 +54,56 @@ export default function Home() {
           <p className="text-base md:text-lg text-muted-foreground" data-testid="text-institution">
             Duke-NUS Medical School, Singapore
           </p>
+
+          <div className="flex gap-3 mt-6">
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              data-testid="link-github"
+            >
+              <a
+                href="https://github.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              data-testid="link-x"
+            >
+              <a
+                href="https://x.com/yourusername"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
+              >
+                <SiX className="h-4 w-4" />
+              </a>
+            </Button>
+
+            <Button
+              variant="outline"
+              size="icon"
+              asChild
+              data-testid="link-orcid"
+            >
+              <a
+                href="https://orcid.org/0000-0000-0000-0000"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="ORCID"
+              >
+                <SiOrcid className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
