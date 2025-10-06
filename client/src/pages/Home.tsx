@@ -18,8 +18,16 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="absolute top-4 right-4">
+    <div className="min-h-screen bg-background relative overflow-hidden">
+      {/* Elegant gradient background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5 dark:from-primary/10 dark:via-background dark:to-secondary/10" />
+      
+      {/* Decorative circles */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 dark:bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 dark:bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+      <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-accent/5 dark:bg-accent/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      
+      <div className="absolute top-4 right-4 z-10">
         <Button
           variant="ghost"
           size="icon"
@@ -34,7 +42,7 @@ export default function Home() {
         </Button>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
+      <div className="max-w-7xl mx-auto px-6 py-16 md:py-24 relative z-10">
         <div className="flex flex-col items-center text-center mb-16">
           <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
             <AvatarImage src="/prof_pic.JPG" alt="Profile" />
@@ -107,7 +115,7 @@ export default function Home() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          <Card className="hover-elevate" data-testid="card-publications">
+          <Card className="hover-elevate backdrop-blur-sm bg-card/80 border-card-border/50" data-testid="card-publications">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-primary/10 rounded-md">
@@ -121,7 +129,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  View my publications on Google Scholar
+                  View my publications on Google Scholar here
                 </p>
                 <Button
                   variant="default"
@@ -143,7 +151,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="hover-elevate" data-testid="card-writing">
+          <Card className="hover-elevate backdrop-blur-sm bg-card/80 border-card-border/50" data-testid="card-writing">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-secondary/10 rounded-md">
@@ -157,7 +165,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  Coming soon: In-depth articles on biotech, academia, and life
+                  Long-form essays on biotech, research, and life
                 </p>
                 <Button
                   variant="secondary"
@@ -179,7 +187,7 @@ export default function Home() {
             </CardContent>
           </Card>
 
-          <Card className="hover-elevate" data-testid="card-cv">
+          <Card className="hover-elevate backdrop-blur-sm bg-card/80 border-card-border/50" data-testid="card-cv">
             <CardHeader>
               <div className="flex items-center gap-3">
                 <div className="p-3 bg-accent/10 rounded-md">
