@@ -1,155 +1,161 @@
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { About } from "@/components/About";
-import { Publications } from "@/components/Publications";
-import { Writing } from "@/components/Writing";
-import { CVDownload } from "@/components/CVDownload";
-import { Footer } from "@/components/Footer";
-import type { Publication, SubstackArticle } from "@shared/schema";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { BookOpen, PenTool, Download, Moon, Sun } from "lucide-react";
+import { useTheme } from "@/hooks/use-theme";
 
 export default function Home() {
-  const mockPublications: Publication[] = [
-    {
-      id: "1",
-      title: "Advances in Neural Machine Translation: A Comprehensive Survey",
-      authors: "Jane Smith, John Doe, Alice Johnson",
-      venue: "Proceedings of NeurIPS 2024",
-      year: 2024,
-      citations: 45,
-      pdfUrl: "#",
-      scholarUrl: "#",
-    },
-    {
-      id: "2",
-      title: "Ethical Considerations in Large Language Models",
-      authors: "Jane Smith, Bob Wilson",
-      venue: "ACL 2024",
-      year: 2024,
-      citations: 32,
-      pdfUrl: "#",
-      scholarUrl: "#",
-    },
-    {
-      id: "3",
-      title: "Improving Context Understanding in Transformer Architectures",
-      authors: "Jane Smith, Carol Davis, Eve Martinez",
-      venue: "ICML 2023",
-      year: 2023,
-      citations: 78,
-      pdfUrl: "#",
-      scholarUrl: "#",
-    },
-    {
-      id: "4",
-      title: "Zero-Shot Learning for Cross-Lingual Transfer",
-      authors: "Jane Smith, Frank Brown",
-      venue: "EMNLP 2023",
-      year: 2023,
-      citations: 56,
-      pdfUrl: "#",
-      scholarUrl: "#",
-    },
-    {
-      id: "5",
-      title: "Attention Mechanisms for Long-Form Text Generation",
-      authors: "Jane Smith",
-      venue: "ICLR 2022",
-      year: 2022,
-      citations: 123,
-      pdfUrl: "#",
-      scholarUrl: "#",
-    },
-  ];
-
-  const mockArticles: SubstackArticle[] = [
-    {
-      id: "1",
-      title: "The Future of AI Research: Where Are We Heading?",
-      excerpt:
-        "Exploring the current state of artificial intelligence research and what the next decade might bring for the field.",
-      url: "#",
-      publishedDate: "March 15, 2024",
-      readTime: "8 min read",
-    },
-    {
-      id: "2",
-      title: "On Academic Publishing and Open Science",
-      excerpt:
-        "Reflections on the challenges and opportunities in modern academic publishing, and why open science matters now more than ever.",
-      url: "#",
-      publishedDate: "February 8, 2024",
-      readTime: "12 min read",
-    },
-    {
-      id: "3",
-      title: "Building Better AI: Lessons from Nature",
-      excerpt:
-        "What biological intelligence can teach us about creating more robust and efficient artificial intelligence systems.",
-      url: "#",
-      publishedDate: "January 22, 2024",
-      readTime: "10 min read",
-    },
-    {
-      id: "4",
-      title: "The PhD Journey: Reflections After Three Years",
-      excerpt:
-        "Personal insights and lessons learned from navigating the challenges and rewards of doctoral research.",
-      url: "#",
-      publishedDate: "December 10, 2023",
-      readTime: "15 min read",
-    },
-  ];
-
-  const handleViewPublications = () => {
-    document.getElementById("publications")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const { theme, setTheme } = useTheme();
 
   const handleDownloadCV = () => {
-    console.log("Download CV clicked");
+    const link = document.createElement('a');
+    link.href = '/cv.pdf';
+    link.download = 'CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
-    <div className="min-h-screen">
-      <Header />
+    <div className="min-h-screen bg-background">
+      <div className="absolute top-4 right-4">
+        <Button
+          variant="ghost"
+          size="icon"
+          onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+          data-testid="button-theme-toggle"
+        >
+          {theme === "dark" ? (
+            <Sun className="h-5 w-5" />
+          ) : (
+            <Moon className="h-5 w-5" />
+          )}
+        </Button>
+      </div>
 
-      <Hero
-        name="Dr. Jane Smith"
-        position="PhD Student in Computer Science"
-        institution="University of Technology"
-        bio="I research machine learning and artificial intelligence, with a focus on natural language processing and computational linguistics. My work aims to bridge the gap between human understanding and machine intelligence."
-        researchInterests={[
-          "Machine Learning",
-          "Natural Language Processing",
-          "AI Ethics",
-          "Computational Linguistics",
-        ]}
-        onViewPublications={handleViewPublications}
-        onDownloadCV={handleDownloadCV}
-      />
+      <div className="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        <div className="flex flex-col items-center text-center mb-16">
+          <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
+            <AvatarImage src="" alt="Profile" />
+            <AvatarFallback className="text-2xl md:text-3xl font-semibold">
+              JS
+            </AvatarFallback>
+          </Avatar>
 
-      <About
-        biography={[
-          "I am a PhD student at the University of Technology, where I work on developing novel approaches to machine learning and natural language processing. My research focuses on creating AI systems that can better understand and generate human language.",
-          "Before starting my PhD, I completed my master's degree in Computer Science with a thesis on neural machine translation. I've published papers at top-tier conferences including NeurIPS, ICML, and ACL.",
-          "Beyond my research, I'm passionate about making AI more accessible and ethical. I write regularly on my Substack about the intersection of technology, society, and artificial intelligence.",
-        ]}
-        email="jane.smith@university.edu"
-        scholarUrl="https://scholar.google.com"
-        linkedinUrl="https://linkedin.com"
-        twitterUrl="https://twitter.com"
-      />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-3" data-testid="text-name">
+            Dr. Jane Smith
+          </h1>
 
-      <Publications publications={mockPublications} />
+          <p className="text-lg md:text-xl text-muted-foreground mb-2" data-testid="text-position">
+            PhD Student in Computer Science
+          </p>
 
-      <Writing articles={mockArticles} substackUrl="https://substack.com" />
+          <p className="text-base md:text-lg text-muted-foreground" data-testid="text-institution">
+            University of Technology
+          </p>
+        </div>
 
-      <CVDownload
-        lastUpdated="March 2024"
-        fileSize="245 KB"
-        onDownload={handleDownloadCV}
-      />
+        <div className="grid gap-6 md:gap-8">
+          <Card className="hover-elevate" data-testid="card-publications">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-3 bg-primary/10 rounded-md">
+                  <BookOpen className="h-6 w-6 text-primary" />
+                </div>
+                <div className="text-left">
+                  <CardTitle className="text-2xl">Publications</CardTitle>
+                  <CardDescription>View my research on Google Scholar</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <Button
+                variant="default"
+                size="lg"
+                className="w-full"
+                asChild
+                data-testid="button-google-scholar"
+              >
+                <a
+                  href="https://scholar.google.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BookOpen className="mr-2 h-5 w-5" />
+                  Visit Google Scholar
+                </a>
+              </Button>
+            </CardContent>
+          </Card>
 
-      <Footer />
+          <Card className="hover-elevate" data-testid="card-writing">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-3 bg-secondary/10 rounded-md">
+                  <PenTool className="h-6 w-6 text-secondary" />
+                </div>
+                <div className="text-left">
+                  <CardTitle className="text-2xl">Writing</CardTitle>
+                  <CardDescription>Long-form essays and thoughts</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-3">
+                <p className="text-muted-foreground text-sm">
+                  Coming soon: In-depth articles on AI research, academia, and technology.
+                </p>
+                <Button
+                  variant="secondary"
+                  size="lg"
+                  className="w-full"
+                  asChild
+                  data-testid="button-substack"
+                >
+                  <a
+                    href="https://yoursubstack.substack.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <PenTool className="mr-2 h-5 w-5" />
+                    Visit Substack
+                  </a>
+                </Button>
+              </div>
+            </CardContent>
+          </Card>
+
+          <Card className="hover-elevate" data-testid="card-cv">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-3 bg-accent/10 rounded-md">
+                  <Download className="h-6 w-6 text-accent" />
+                </div>
+                <div className="text-left">
+                  <CardTitle className="text-2xl">Curriculum Vitae</CardTitle>
+                  <CardDescription>Download my CV as a PDF</CardDescription>
+                </div>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <Button
+                variant="default"
+                size="lg"
+                className="w-full"
+                onClick={handleDownloadCV}
+                data-testid="button-download-cv"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                Download CV
+              </Button>
+            </CardContent>
+          </Card>
+        </div>
+
+        <footer className="mt-16 pt-8 border-t text-center text-sm text-muted-foreground">
+          <p>© {new Date().getFullYear()} Dr. Jane Smith. All rights reserved.</p>
+        </footer>
+      </div>
     </div>
   );
 }
