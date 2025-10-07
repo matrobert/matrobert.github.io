@@ -70,7 +70,7 @@ export default function Home() {
               data-testid="link-github"
             >
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/matrobert"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
@@ -86,7 +86,7 @@ export default function Home() {
               data-testid="link-x"
             >
               <a
-                href="https://x.com/yourusername"
+                href="https://x.com/matrobert_
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"
@@ -102,7 +102,7 @@ export default function Home() {
               data-testid="link-orcid"
             >
               <a
-                href="https://orcid.org/0000-0000-0000-0000"
+                href="https://orcid.org/0000-0002-2958-5415"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="ORCID"
@@ -128,7 +128,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  View my publications on Google Scholar here
+                  View my publications on Google Scholar
                 </p>
                 <Button
                   variant="default"
@@ -138,7 +138,7 @@ export default function Home() {
                   data-testid="button-google-scholar"
                 >
                   <a
-                    href="https://scholar.google.com"
+                    href="https://scholar.google.com/citations?user=zDHqheEAAAAJ&hl=en"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -200,7 +200,7 @@ export default function Home() {
             <CardContent>
               <div className="space-y-3">
                 <p className="text-muted-foreground text-sm">
-                  Download and view my curriculum vitae here
+                  Download and view my curriculum vitae
                 </p>
                 <Button
                   variant="default"
