@@ -86,7 +86,7 @@ export default function Home() {
               data-testid="link-x"
             >
               <a
-                href="https://x.com/matrobert_
+                href="https://x.com/matrobert_"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="X (Twitter)"
