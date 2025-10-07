@@ -55,7 +55,7 @@ export default function Home() {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-2" data-testid="text-position">
-            Metabolic Research | PhD Candidate
+            Metabolic Research & PhD Candidate
           </p>
 
           <p className="text-base md:text-lg text-muted-foreground" data-testid="text-institution">
