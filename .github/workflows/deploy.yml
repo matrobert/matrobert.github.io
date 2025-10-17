@@ -40,7 +40,6 @@ jobs:
           fi
 
       - name: Build
-        working-directory: ./client
         run: npx vite build --base=${{ steps.base-path.outputs.BASE_PATH }}
         env:
           NODE_ENV: production
