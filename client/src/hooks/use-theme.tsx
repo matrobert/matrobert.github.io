@@ -24,20 +24,46 @@ export function ThemeProvider({
   defaultTheme = "light",
   ...props
 }: ThemeProviderProps) {
-  const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem("theme") as Theme) || defaultTheme
-  );
+  const [theme, setTheme] = useState<Theme>(() => {
+    const savedTheme = localStorage.getItem("theme-preference") as Theme;
+    if (savedTheme) {
+      return savedTheme;
+    }
+    
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+    return systemTheme;
+  });
 
   useEffect(() => {
     const root = document.documentElement;
     root.classList.remove("light", "dark");
     root.classList.add(theme);
-    localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    
+    const handleChange = (e: MediaQueryListEvent) => {
+      const hasManualPreference = localStorage.getItem("theme-preference");
+      if (!hasManualPreference) {
+        setTheme(e.matches ? "dark" : "light");
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  const handleSetTheme = (newTheme: Theme) => {
+    localStorage.setItem("theme-preference", newTheme);
+    setTheme(newTheme);
+  };
 
   const value = {
     theme,
-    setTheme,
+    setTheme: handleSetTheme,
   };
 
   return (
