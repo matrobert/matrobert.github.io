@@ -46,7 +46,7 @@ export default function Home() {
           <Avatar className="w-32 h-32 md:w-40 md:h-40 mb-6">
             <AvatarImage src="/prof_pic.JPG" alt="Profile" />
             <AvatarFallback className="text-2xl md:text-3xl font-semibold">
-              JS
+              MR
             </AvatarFallback>
           </Avatar>
 
