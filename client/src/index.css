@@ -316,49 +316,34 @@
     inset: -1px;
   }
 
-  /* Pixel Tree Background */
-  .pixel-tree {
+  /* Sketch Tree Background */
+  .sketch-tree {
     position: absolute;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    height: 400px;
-    opacity: 0.08;
+    left: 0;
+    width: 300px;
+    height: 600px;
+    opacity: 0.12;
     pointer-events: none;
-    background-image: 
-      /* Tree trunk */
-      linear-gradient(to bottom, 
-        transparent 0%, transparent 60%,
-        hsl(var(--foreground) / 0.3) 60%, hsl(var(--foreground) / 0.3) 100%
-      );
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
+    color: hsl(var(--foreground) / 0.4);
   }
 
-  .pixel-tree::before {
-    content: "";
-    position: absolute;
-    bottom: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: 100px solid transparent;
-    border-right: 100px solid transparent;
-    border-bottom: 240px solid hsl(var(--foreground) / 0.3);
+  .sketch-tree path {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw 3s ease-in-out forwards;
   }
 
-  .pixel-tree::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40px;
-    height: 160px;
-    background: hsl(var(--foreground) / 0.3);
+  .sketch-tree path:nth-child(n+1) { animation-delay: 0s; }
+  .sketch-tree path:nth-child(n+6) { animation-delay: 0.1s; }
+  .sketch-tree path:nth-child(n+11) { animation-delay: 0.2s; }
+  .sketch-tree path:nth-child(n+16) { animation-delay: 0.3s; }
+  .sketch-tree path:nth-child(n+21) { animation-delay: 0.4s; }
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
   }
 
   /* Falling Leaves Animation */
@@ -401,8 +386,9 @@
     image-rendering: crisp-edges;
   }
 
-  .dark .pixel-tree {
-    opacity: 0.12;
+  .dark .sketch-tree {
+    opacity: 0.15;
+    color: hsl(var(--foreground) / 0.5);
   }
 
   .dark .falling-leaf {
