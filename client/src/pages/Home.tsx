@@ -94,7 +94,7 @@ export default function Home() {
 
           {/* Main Cards */}
           <div className="space-y-5 xl:space-y-6">
-            <Card className="hover-elevate" data-testid="card-publications">
+            <Card className="hover-elevate opacity-50" data-testid="card-publications">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
                   <div className="p-3 xl:p-4 bg-primary/10 rounded-md">
@@ -122,7 +122,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover-elevate" data-testid="card-writing">
+            <Card className="hover-elevate opacity-50" data-testid="card-writing">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
                   <div className="p-3 xl:p-4 bg-secondary/10 rounded-md">
@@ -150,7 +150,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="hover-elevate" data-testid="card-cv">
+            <Card className="hover-elevate opacity-50" data-testid="card-cv">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
                   <div className="p-3 xl:p-4 bg-accent/10 rounded-md">
