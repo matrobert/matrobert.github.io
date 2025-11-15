@@ -4,7 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { BookOpen, PenTool, Download, Moon, Sun, Github } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
 import { SiX, SiOrcid } from "react-icons/si";
-import BackgroundAnimation from "@/components/BackgroundAnimation";
+import dnaBackground from "@assets/DNA_1763203774084.png";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -20,15 +20,15 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Elegant gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/5 dark:from-primary/10 dark:via-background dark:to-secondary/10" />
-      
-      {/* Decorative circles */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 dark:bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 dark:bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
-
-      {/* Pixelated tree with falling leaves */}
-      <BackgroundAnimation />
+      {/* DNA Background */}
+      <div 
+        className="absolute inset-0 bg-no-repeat bg-left-top opacity-[0.08] dark:opacity-[0.12]"
+        style={{
+          backgroundImage: `url(${dnaBackground})`,
+          backgroundSize: 'auto 100%',
+          backgroundPosition: 'left top',
+        }}
+      />
       
       <div className="absolute top-4 right-4 z-10">
         <Button
