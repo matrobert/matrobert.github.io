@@ -1,13 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { BookOpen, PenTool, Download, Moon, Sun, Github } from "lucide-react";
-import { useTheme } from "@/hooks/use-theme";
+import { BookOpen, PenTool, Download, Github } from "lucide-react";
 import { SiX, SiOrcid } from "react-icons/si";
 import dnaBackground from "@assets/DNA_1763203774084.png";
 
 export default function Home() {
-  const { theme, setTheme } = useTheme();
-
   const handleDownloadCV = () => {
     const link = document.createElement('a');
     link.href = '/cv.pdf';
@@ -18,33 +15,18 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex flex-col lg:flex-row">
-      {/* Left side - DNA Background */}
+    <div className="min-h-screen bg-background relative">
+      {/* DNA Background - positioned on the left */}
       <div 
-        className="w-full lg:w-5/12 xl:w-1/2 h-64 lg:min-h-screen bg-no-repeat bg-contain lg:bg-cover bg-center"
+        className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-no-repeat bg-left bg-contain lg:bg-cover opacity-[0.15]"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
       />
-      
-      {/* Right side - Content */}
-      <div className="flex-1 relative">
-        <div className="absolute top-6 right-6 z-10">
-          <Button
-            variant="ghost"
-            size="icon"
-            onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            data-testid="button-theme-toggle"
-          >
-            {theme === "dark" ? (
-              <Sun className="h-5 w-5" />
-            ) : (
-              <Moon className="h-5 w-5" />
-            )}
-          </Button>
-        </div>
 
-        <div className="max-w-3xl mx-auto px-6 lg:px-12 xl:px-16 py-16 md:py-24 lg:py-32">
+      {/* Content */}
+      <div className="relative z-10">
+        <div className="max-w-4xl mx-auto lg:ml-auto lg:mr-16 px-6 lg:px-12 py-16 md:py-24 lg:py-32">
           {/* Header */}
           <header className="mb-16 lg:mb-20">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-normal mb-6" data-testid="text-name">
