@@ -104,9 +104,6 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-3 font-serif leading-relaxed">
-                  View my publications on Google Scholar
-                </p>
                 <Button
                   variant="default"
                   asChild
@@ -134,9 +131,6 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-3 font-serif leading-relaxed">
-                  Long-form essays on biotech, research, and life
-                </p>
                 <Button
                   variant="secondary"
                   asChild
@@ -164,9 +158,6 @@ export default function Home() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-sm text-muted-foreground mb-3 font-serif leading-relaxed">
-                  Download and view my curriculum vitae
-                </p>
                 <Button
                   variant="default"
                   onClick={handleDownloadCV}
