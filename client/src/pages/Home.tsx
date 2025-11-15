@@ -16,9 +16,9 @@ export default function Home() {
 
   return (
     <div className="h-screen bg-background relative overflow-hidden">
-      {/* DNA Background - bottom on mobile (rotated 45deg), left on desktop */}
+      {/* DNA Background - bottom on mobile (rotated 90deg), left on desktop */}
       <div 
-        className="absolute bottom-0 left-0 right-0 h-48 bg-no-repeat bg-bottom bg-cover rotate-45 lg:rotate-0 lg:inset-y-0 lg:h-auto lg:right-auto lg:w-[42%] lg:bg-left"
+        className="absolute bottom-0 left-0 right-0 h-48 bg-no-repeat bg-bottom bg-cover rotate-90 lg:rotate-0 lg:inset-y-0 lg:h-auto lg:right-auto lg:w-[42%] lg:bg-left"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
