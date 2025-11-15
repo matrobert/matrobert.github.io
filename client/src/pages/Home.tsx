@@ -18,10 +18,10 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background flex">
+    <div className="min-h-screen bg-background flex flex-col lg:flex-row">
       {/* Left side - DNA Background */}
       <div 
-        className="hidden lg:block lg:w-5/12 xl:w-1/2 min-h-screen bg-no-repeat bg-cover bg-center"
+        className="w-full lg:w-5/12 xl:w-1/2 h-64 lg:min-h-screen bg-no-repeat bg-contain lg:bg-cover bg-center"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
