@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, PenTool, Download, Moon, Sun, Github } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
 import { SiX, SiOrcid } from "react-icons/si";
-import dnaBackground from "@assets/DNA_1763204843876.png";
+import dnaBackground from "@assets/DNA_1763203774084.png";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
