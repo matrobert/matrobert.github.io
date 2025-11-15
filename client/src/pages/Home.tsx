@@ -97,8 +97,8 @@ export default function Home() {
             <Card className="hover-elevate bg-card/50" data-testid="card-publications">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 xl:p-4 bg-primary/10 rounded-md">
-                    <BookOpen className="h-6 w-6 xl:h-8 xl:w-8 text-primary" />
+                  <div className="p-3 xl:p-4 bg-primary rounded-md">
+                    <BookOpen className="h-6 w-6 xl:h-8 xl:w-8 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-2xl xl:text-3xl font-serif font-normal">Publications</CardTitle>
                 </div>
@@ -125,8 +125,8 @@ export default function Home() {
             <Card className="hover-elevate bg-card/50" data-testid="card-writing">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 xl:p-4 bg-secondary/10 rounded-md">
-                    <PenTool className="h-6 w-6 xl:h-8 xl:w-8 text-secondary" />
+                  <div className="p-3 xl:p-4 bg-secondary rounded-md">
+                    <PenTool className="h-6 w-6 xl:h-8 xl:w-8 text-secondary-foreground" />
                   </div>
                   <CardTitle className="text-2xl xl:text-3xl font-serif font-normal">Writing</CardTitle>
                 </div>
@@ -153,8 +153,8 @@ export default function Home() {
             <Card className="hover-elevate bg-card/50" data-testid="card-cv">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 xl:p-4 bg-accent/10 rounded-md">
-                    <Download className="h-6 w-6 xl:h-8 xl:w-8 text-accent" />
+                  <div className="p-3 xl:p-4 bg-accent rounded-md">
+                    <Download className="h-6 w-6 xl:h-8 xl:w-8 text-accent-foreground" />
                   </div>
                   <CardTitle className="text-2xl xl:text-3xl font-serif font-normal">CV</CardTitle>
                 </div>
