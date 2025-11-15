@@ -15,33 +15,33 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-background relative">
+    <div className="h-screen bg-background relative overflow-hidden">
       {/* DNA Background - positioned on the left */}
       <div 
-        className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-no-repeat bg-left bg-contain lg:bg-cover opacity-[0.15]"
+        className="absolute inset-y-0 left-0 w-full lg:w-2/5 bg-no-repeat bg-left bg-contain opacity-[0.12]"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
       />
 
       {/* Content */}
-      <div className="relative z-10">
-        <div className="max-w-4xl mx-auto lg:ml-auto lg:mr-16 px-6 lg:px-12 py-16 md:py-24 lg:py-32">
+      <div className="relative z-10 h-full overflow-y-auto">
+        <div className="max-w-3xl mx-auto lg:ml-auto lg:mr-12 px-6 lg:px-10 py-8 md:py-10 lg:py-12">
           {/* Header */}
-          <header className="mb-16 lg:mb-20">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-normal mb-6" data-testid="text-name">
+          <header className="mb-8 lg:mb-10">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal mb-4" data-testid="text-name">
               Matius Robert
             </h1>
 
-            <p className="text-xl md:text-2xl text-foreground/80 mb-3 font-serif" data-testid="text-position">
+            <p className="text-lg md:text-xl text-foreground/80 mb-2 font-serif" data-testid="text-position">
               Metabolic Research & PhD Candidate
             </p>
 
-            <p className="text-lg md:text-xl text-muted-foreground font-serif" data-testid="text-institution">
+            <p className="text-base md:text-lg text-muted-foreground font-serif" data-testid="text-institution">
               Duke-NUS Medical School, Singapore
             </p>
 
-            <div className="flex gap-3 mt-8">
+            <div className="flex gap-2 mt-5">
               <Button
                 variant="outline"
                 size="icon"
@@ -54,7 +54,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="GitHub"
                 >
-                  <Github className="h-5 w-5" />
+                  <Github className="h-4 w-4" />
                 </a>
               </Button>
 
@@ -70,7 +70,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="X (Twitter)"
                 >
-                  <SiX className="h-4 w-4" />
+                  <SiX className="h-3.5 w-3.5" />
                 </a>
               </Button>
 
@@ -86,30 +86,29 @@ export default function Home() {
                   rel="noopener noreferrer"
                   aria-label="ORCID"
                 >
-                  <SiOrcid className="h-5 w-5" />
+                  <SiOrcid className="h-4 w-4" />
                 </a>
               </Button>
             </div>
           </header>
 
           {/* Main Cards */}
-          <div className="space-y-6">
+          <div className="space-y-4">
             <Card className="hover-elevate" data-testid="card-publications">
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-primary/10 rounded-md">
-                    <BookOpen className="h-7 w-7 text-primary" />
+              <CardHeader className="pb-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-primary/10 rounded-md">
+                    <BookOpen className="h-5 w-5 text-primary" />
                   </div>
-                  <CardTitle className="text-3xl font-serif font-normal">Publications</CardTitle>
+                  <CardTitle className="text-xl font-serif font-normal">Publications</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-5 font-serif leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-3 font-serif leading-relaxed">
                   View my publications on Google Scholar
                 </p>
                 <Button
                   variant="default"
-                  size="lg"
                   asChild
                   data-testid="button-google-scholar"
                 >
@@ -118,7 +117,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <BookOpen className="mr-2 h-5 w-5" />
+                    <BookOpen className="mr-2 h-4 w-4" />
                     Visit Google Scholar
                   </a>
                 </Button>
@@ -126,21 +125,20 @@ export default function Home() {
             </Card>
 
             <Card className="hover-elevate" data-testid="card-writing">
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-secondary/10 rounded-md">
-                    <PenTool className="h-7 w-7 text-secondary" />
+              <CardHeader className="pb-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-secondary/10 rounded-md">
+                    <PenTool className="h-5 w-5 text-secondary" />
                   </div>
-                  <CardTitle className="text-3xl font-serif font-normal">Writing</CardTitle>
+                  <CardTitle className="text-xl font-serif font-normal">Writing</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-5 font-serif leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-3 font-serif leading-relaxed">
                   Long-form essays on biotech, research, and life
                 </p>
                 <Button
                   variant="secondary"
-                  size="lg"
                   asChild
                   data-testid="button-substack"
                 >
@@ -149,7 +147,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <PenTool className="mr-2 h-5 w-5" />
+                    <PenTool className="mr-2 h-4 w-4" />
                     Visit Substack
                   </a>
                 </Button>
@@ -157,25 +155,24 @@ export default function Home() {
             </Card>
 
             <Card className="hover-elevate" data-testid="card-cv">
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <div className="p-3 bg-accent/10 rounded-md">
-                    <Download className="h-7 w-7 text-accent" />
+              <CardHeader className="pb-3">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-accent/10 rounded-md">
+                    <Download className="h-5 w-5 text-accent" />
                   </div>
-                  <CardTitle className="text-3xl font-serif font-normal">CV</CardTitle>
+                  <CardTitle className="text-xl font-serif font-normal">CV</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-5 font-serif leading-relaxed">
+                <p className="text-sm text-muted-foreground mb-3 font-serif leading-relaxed">
                   Download and view my curriculum vitae
                 </p>
                 <Button
                   variant="default"
-                  size="lg"
                   onClick={handleDownloadCV}
                   data-testid="button-download-cv"
                 >
-                  <Download className="mr-2 h-5 w-5" />
+                  <Download className="mr-2 h-4 w-4" />
                   Download CV
                 </Button>
               </CardContent>
@@ -183,7 +180,7 @@ export default function Home() {
           </div>
 
           {/* Footer */}
-          <footer className="mt-16 lg:mt-20 pt-8 border-t text-sm text-muted-foreground font-serif">
+          <footer className="mt-10 pt-6 border-t text-xs text-muted-foreground font-serif">
             <p>© {new Date().getFullYear()} Matius Robert. All rights reserved.</p>
           </footer>
         </div>
