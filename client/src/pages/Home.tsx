@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BookOpen, PenTool, Download, Github } from "lucide-react";
 import { SiX, SiOrcid } from "react-icons/si";
-import dnaBackground from "@assets/Bird_DNA_tiny.svg";
+import dnaBackground from "@assets/DNA_bird.svg";
 
 export default function Home() {
   const handleDownloadCV = () => {
