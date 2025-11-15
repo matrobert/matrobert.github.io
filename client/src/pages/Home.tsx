@@ -18,7 +18,7 @@ export default function Home() {
     <div className="h-screen bg-background relative overflow-hidden">
       {/* DNA Background - positioned on the left */}
       <div 
-        className="absolute inset-y-0 left-0 w-full lg:w-2/5 bg-no-repeat bg-left bg-contain opacity-[0.12]"
+        className="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-no-repeat bg-left bg-contain lg:bg-cover opacity-[0.12]"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
