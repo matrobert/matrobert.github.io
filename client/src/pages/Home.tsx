@@ -18,7 +18,7 @@ export default function Home() {
     <div className="h-screen bg-background relative overflow-hidden">
       {/* DNA Background - hidden on mobile, left on desktop */}
       <div 
-        className="hidden lg:block absolute lg:inset-y-0 lg:left-0 lg:w-[100%] bg-no-repeat lg:bg-left lg:bg-cover"
+        className="hidden lg:block absolute lg:inset-y-0 lg:left-0 lg:w-[42%] bg-no-repeat lg:bg-left lg:bg-cover"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10 h-full overflow-y-auto">
-        <div className="max-w-4xl mx-auto lg:ml-auto lg:mr-44 px-6 lg:px-12 xl:px-16 py-10 md:py-12 lg:py-16 xl:py-20">
+        <div className="max-w-4xl mx-auto lg:ml-auto lg:mr-32 px-6 lg:px-12 xl:px-16 py-10 md:py-12 lg:py-16 xl:py-20">
           {/* Header */}
           <header className="mb-10 lg:mb-12 xl:mb-16">
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-serif font-normal mb-5 xl:mb-6" data-testid="text-name">
