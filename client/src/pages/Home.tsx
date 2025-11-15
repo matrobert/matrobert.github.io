@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { BookOpen, PenTool, Download, Moon, Sun, Github } from "lucide-react";
 import { useTheme } from "@/hooks/use-theme";
 import { SiX, SiOrcid } from "react-icons/si";
+import BackgroundAnimation from "@/components/BackgroundAnimation";
 
 export default function Home() {
   const { theme, setTheme } = useTheme();
@@ -25,6 +26,9 @@ export default function Home() {
       {/* Decorative circles */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 dark:bg-primary/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-secondary/10 dark:bg-secondary/20 rounded-full blur-3xl translate-y-1/2 -translate-x-1/2" />
+
+      {/* Pixelated tree with falling leaves */}
+      <BackgroundAnimation />
       
       <div className="absolute top-4 right-4 z-10">
         <Button
