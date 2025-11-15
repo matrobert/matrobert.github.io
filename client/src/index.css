@@ -316,82 +316,20 @@
     inset: -1px;
   }
 
-  /* Sketch Tree Background */
-  .sketch-tree {
+  /* Engraving Tree Background */
+  .engraving-tree {
     position: absolute;
     bottom: 0;
-    left: 0;
-    width: 300px;
-    height: 600px;
-    opacity: 0.12;
+    left: -20px;
+    width: 400px;
+    height: 700px;
+    opacity: 0.10;
     pointer-events: none;
-    color: hsl(var(--foreground) / 0.4);
-  }
-
-  .sketch-tree path {
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation: draw 3s ease-in-out forwards;
-  }
-
-  .sketch-tree path:nth-child(n+1) { animation-delay: 0s; }
-  .sketch-tree path:nth-child(n+6) { animation-delay: 0.1s; }
-  .sketch-tree path:nth-child(n+11) { animation-delay: 0.2s; }
-  .sketch-tree path:nth-child(n+16) { animation-delay: 0.3s; }
-  .sketch-tree path:nth-child(n+21) { animation-delay: 0.4s; }
-
-  @keyframes draw {
-    to {
-      stroke-dashoffset: 0;
-    }
-  }
-
-  /* Falling Leaves Animation */
-  @keyframes fall {
-    0% {
-      transform: translateY(-10vh) rotate(0deg);
-      opacity: 0.8;
-    }
-    50% {
-      opacity: 0.6;
-    }
-    100% {
-      transform: translateY(110vh) rotate(360deg);
-      opacity: 0;
-    }
-  }
-
-  @keyframes sway {
-    0%, 100% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(30px);
-    }
-  }
-
-  .falling-leaf-container {
-    position: absolute;
-    top: -10vh;
-    animation: fall linear infinite;
-  }
-
-  .falling-leaf {
-    background: hsl(var(--accent) / 0.5);
-    border-radius: 0 50% 50% 50%;
-    animation: sway 3s ease-in-out infinite;
-    box-shadow: 0 0 3px hsl(var(--accent) / 0.3);
-    image-rendering: pixelated;
-    image-rendering: -moz-crisp-edges;
-    image-rendering: crisp-edges;
-  }
-
-  .dark .sketch-tree {
-    opacity: 0.15;
     color: hsl(var(--foreground) / 0.5);
   }
 
-  .dark .falling-leaf {
-    background: hsl(var(--accent) / 0.6);
+  .dark .engraving-tree {
+    opacity: 0.13;
+    color: hsl(var(--foreground) / 0.6);
   }
 }
