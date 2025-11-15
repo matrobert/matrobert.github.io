@@ -18,7 +18,7 @@ export default function Home() {
     <div className="h-screen bg-background relative overflow-hidden">
       {/* DNA Background - bottom on mobile, left on desktop */}
       <div 
-        className="absolute bottom-0 left-0 right-0 h-64 bg-no-repeat bg-bottom bg-contain lg:inset-y-0 lg:h-auto lg:right-auto lg:w-[42%] lg:bg-left lg:bg-cover"
+        className="absolute bottom-0 left-0 right-0 h-48 bg-no-repeat bg-bottom bg-cover lg:inset-y-0 lg:h-auto lg:right-auto lg:w-[42%] lg:bg-left"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
