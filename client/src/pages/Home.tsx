@@ -21,7 +21,7 @@ export default function Home() {
     <div className="min-h-screen bg-background flex">
       {/* Left side - DNA Background */}
       <div 
-        className="hidden lg:block lg:w-5/12 xl:w-1/2 bg-no-repeat bg-cover bg-center"
+        className="hidden lg:block lg:w-5/12 xl:w-1/2 min-h-screen bg-no-repeat bg-cover bg-center"
         style={{
           backgroundImage: `url(${dnaBackground})`,
         }}
