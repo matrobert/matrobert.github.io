@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div className="h-screen bg-background relative overflow-hidden">
+    <div className="h-screen relative overflow-hidden" style={{ backgroundColor: '#f8f8f8' }}>
       {/* DNA Background - hidden on mobile, left on desktop */}
       <div 
         className="hidden lg:block absolute lg:inset-y-0 lg:left-0 lg:w-[35%] bg-no-repeat lg:bg-left lg:bg-cover"
