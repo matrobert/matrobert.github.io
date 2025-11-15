@@ -26,7 +26,7 @@ export default function Home() {
 
       {/* Content */}
       <div className="relative z-10 h-full overflow-y-auto">
-        <div className="max-w-3xl mx-auto lg:ml-auto lg:mr-6 px-6 lg:px-10 py-8 md:py-10 lg:py-12">
+        <div className="max-w-3xl mx-auto lg:ml-auto lg:mr-20 px-6 lg:px-10 py-8 md:py-10 lg:py-12">
           {/* Header */}
           <header className="mb-8 lg:mb-10">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-normal mb-4" data-testid="text-name">
