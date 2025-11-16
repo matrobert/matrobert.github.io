@@ -125,15 +125,15 @@ export default function Home() {
             <Card className="hover-elevate bg-card/50" data-testid="card-writing">
               <CardHeader className="pb-4 xl:pb-5">
                 <div className="flex items-center gap-4">
-                  <div className="p-3 xl:p-4 bg-secondary/80 rounded-md">
-                    <PenTool className="h-6 w-6 xl:h-8 xl:w-8 text-secondary-foreground" />
+                  <div className="p-3 xl:p-4 bg-primary/80 rounded-md">
+                    <PenTool className="h-6 w-6 xl:h-8 xl:w-8 text-primary-foreground" />
                   </div>
                   <CardTitle className="text-2xl xl:text-3xl font-serif font-normal">Writing</CardTitle>
                 </div>
               </CardHeader>
               <CardContent>
                 <Button
-                  variant="secondary"
+                  variant="default"
                   size="lg"
                   asChild
                   data-testid="button-substack"
